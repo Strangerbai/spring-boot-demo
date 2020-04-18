@@ -39,3 +39,13 @@
 2020-04-18 14:59:53 [http-nio-8091-exec-3] INFO  com.example.test.demo.AOPConfig - args: ["error"]
 2020-04-18 14:59:53 [http-nio-8091-exec-3] INFO  com.example.test.demo.controller.TestController - start
 2020-04-18 14:59:53 [http-nio-8091-exec-3] INFO  com.example.test.demo.configurer.WebMvcConfigurer - 处理异常
+2020-04-18 15:32:44 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47684 (/Users/weidian/Desktop/test_halo/spring-boot-demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/spring-boot-demo)
+2020-04-18 15:32:44 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 15:32:52 [main] INFO  com.example.test.demo.configurer.WebMvcConfigurer - current env: dev
+2020-04-18 15:32:54 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 12.837 seconds (JVM running for 16.634)
+2020-04-18 15:33:15 [http-nio-8091-exec-1] INFO  com.example.test.demo.AOPConfig - args: ["error"]
+2020-04-18 15:33:15 [http-nio-8091-exec-1] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 15:33:15 [http-nio-8091-exec-1] INFO  com.example.test.demo.configurer.WebMvcConfigurer - 处理异常
+2020-04-18 15:33:17 [http-nio-8091-exec-3] INFO  com.example.test.demo.AOPConfig - args: ["aa"]
+2020-04-18 15:33:17 [http-nio-8091-exec-3] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 15:33:17 [http-nio-8091-exec-3] INFO  com.example.test.demo.AOPConfig - return : "hello spring boot aa"
