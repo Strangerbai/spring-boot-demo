@@ -1,0 +1,41 @@
+2020-04-18 14:17:00 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47179 (/Users/weidian/Desktop/test_halo/demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/demo)
+2020-04-18 14:17:00 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 14:17:09 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 13.62 seconds (JVM running for 17.528)
+2020-04-18 14:20:06 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47186 (/Users/weidian/Desktop/test_halo/demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/demo)
+2020-04-18 14:20:06 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 14:20:09 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 4.238 seconds (JVM running for 5.906)
+2020-04-18 14:20:28 [http-nio-8091-exec-1] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 14:28:58 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47215 (/Users/weidian/Desktop/test_halo/demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/demo)
+2020-04-18 14:28:58 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 14:29:01 [main] INFO  com.example.test.demo.configurer.WebMvcConfigurer - current env: dev
+2020-04-18 14:29:02 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 4.402 seconds (JVM running for 5.86)
+2020-04-18 14:29:09 [http-nio-8091-exec-1] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 14:29:35 [http-nio-8091-exec-4] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 14:53:57 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47258 (/Users/weidian/Desktop/test_halo/demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/demo)
+2020-04-18 14:53:57 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 14:54:00 [main] INFO  com.example.test.demo.configurer.WebMvcConfigurer - current env: dev
+2020-04-18 14:54:00 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 4.056 seconds (JVM running for 5.137)
+2020-04-18 14:54:51 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47262 (/Users/weidian/Desktop/test_halo/demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/demo)
+2020-04-18 14:54:51 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 14:54:54 [main] INFO  com.example.test.demo.configurer.WebMvcConfigurer - current env: dev
+2020-04-18 14:54:55 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 4.92 seconds (JVM running for 6.061)
+2020-04-18 14:54:59 [http-nio-8091-exec-1] INFO  com.example.test.demo.AOPConfig - args: [[Ljava.lang.Object;@60b8171a]
+2020-04-18 14:54:59 [http-nio-8091-exec-1] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 14:54:59 [http-nio-8091-exec-1] INFO  com.example.test.demo.AOPConfig - return : "hello spring boot"
+2020-04-18 14:55:28 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47267 (/Users/weidian/Desktop/test_halo/demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/demo)
+2020-04-18 14:55:28 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 14:55:31 [main] INFO  com.example.test.demo.configurer.WebMvcConfigurer - current env: dev
+2020-04-18 14:55:32 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 4.66 seconds (JVM running for 5.597)
+2020-04-18 14:55:35 [http-nio-8091-exec-1] INFO  com.example.test.demo.AOPConfig - args: []
+2020-04-18 14:55:35 [http-nio-8091-exec-1] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 14:55:35 [http-nio-8091-exec-1] INFO  com.example.test.demo.AOPConfig - return : "hello spring boot"
+2020-04-18 14:59:32 [main] INFO  com.example.test.demo.DemoApplication - Starting DemoApplication on weidians-MacBook-Pro-3.local with PID 47274 (/Users/weidian/Desktop/test_halo/demo/target/classes started by weidian in /Users/weidian/Desktop/test_halo/demo)
+2020-04-18 14:59:32 [main] INFO  com.example.test.demo.DemoApplication - The following profiles are active: dev
+2020-04-18 14:59:35 [main] INFO  com.example.test.demo.configurer.WebMvcConfigurer - current env: dev
+2020-04-18 14:59:35 [main] INFO  com.example.test.demo.DemoApplication - Started DemoApplication in 3.896 seconds (JVM running for 4.862)
+2020-04-18 14:59:49 [http-nio-8091-exec-1] INFO  com.example.test.demo.AOPConfig - args: ["test"]
+2020-04-18 14:59:49 [http-nio-8091-exec-1] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 14:59:49 [http-nio-8091-exec-1] INFO  com.example.test.demo.AOPConfig - return : "hello spring boot test"
+2020-04-18 14:59:53 [http-nio-8091-exec-3] INFO  com.example.test.demo.AOPConfig - args: ["error"]
+2020-04-18 14:59:53 [http-nio-8091-exec-3] INFO  com.example.test.demo.controller.TestController - start
+2020-04-18 14:59:53 [http-nio-8091-exec-3] INFO  com.example.test.demo.configurer.WebMvcConfigurer - 处理异常
