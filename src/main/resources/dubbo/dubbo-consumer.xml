@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+<!-- 设置team名称和服务名称 -->
+    <!-- 修改name为项目名称-->
+    <dubbo:application name="demo"/>
+
+    <!-- 设置注册中心地址 -->
+    <dubbo:registry id="hz_zk" address="zookeeper://zk1.dubbo.daily.idcvdian.com?backup=zk2.dubbo.daily.idcvdian.com,zk3.dubbo.daily.idcvdian.com"/>
+
+
+<!--    &lt;!&ndash; 新服务暴露接口 &ndash;&gt;-->
+<!--    <dubbo:reference id="financeCouponFacade" interface="com.weidian.pay.promotion.client.facade.FinanceCouponFacade"  protocol="dubbo" version="1.0.0" check="false"-->
+<!--                     timeout="10000" registry="hz_zk"/>-->
+
+</beans>

@@ -11,6 +11,7 @@
                    http://www.springframework.org/schema/cache
                    http://www.springframework.org/schema/cache/spring-cache.xsd">
 <!--    <import resource="datasource.xml"/>-->
+    <import resource="classpath*:dubbo/*.xml"/>
 
 
     <cache:annotation-driven/>
