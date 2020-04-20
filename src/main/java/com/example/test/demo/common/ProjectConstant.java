@@ -13,4 +13,14 @@ public final class ProjectConstant {
     public static final String CONTROLLER_PACKAGE = BASE_PACKAGE + ".web";//生成的Controller所在包
 
     public static final String MAPPER_INTERFACE_REFERENCE = BASE_PACKAGE + ".core.Mapper";//Mapper插件基础接口的完全限定名
+
+
+    /**
+     * zk集群地址
+     */
+    public static final String ZK_CLUSTER = "zkOS:2181";
+    /**
+     * dubbo在zk中的根节点路径
+     */
+    public static final String ZK_DUBBO_ROOT_PATH = "/mydubbo";
 }
