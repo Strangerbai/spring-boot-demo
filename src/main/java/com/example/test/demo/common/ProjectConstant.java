@@ -18,7 +18,7 @@ public final class ProjectConstant {
     /**
      * zk集群地址
      */
-    public static final String ZK_CLUSTER = "zkOS:2181";
+    public static final String ZK_CLUSTER = "39.101.207.71:2181";
     /**
      * dubbo在zk中的根节点路径
      */

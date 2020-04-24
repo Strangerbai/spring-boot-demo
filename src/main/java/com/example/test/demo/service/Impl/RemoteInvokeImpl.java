@@ -1,6 +1,5 @@
 package com.example.test.demo.service.Impl;
 
-import com.example.test.demo.controller.request.Invocation;
 import com.example.test.demo.service.RemoteInvoke;
 import com.example.test.demo.service.ServiceDiscovery;
 import io.netty.bootstrap.Bootstrap;
@@ -11,9 +10,12 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
+import org.example.rpc.server.common.Invocation;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+@Service
 public class RemoteInvokeImpl implements RemoteInvoke {
 
     @Resource(name = "serviceDiscoveryImpl")
@@ -21,7 +23,7 @@ public class RemoteInvokeImpl implements RemoteInvoke {
 
 
     @Override
-    public Object rpcInvoke(String clazz, String method, Object[] args, String prefix){
+    public Object rpcInvoke(String clazz, String method, String[] args, String prefix){
         RpcClientHandler handler = new RpcClientHandler();
         EventLoopGroup loopGroup = new NioEventLoopGroup();
         String serviceAddress = null;
@@ -56,8 +58,11 @@ public class RemoteInvokeImpl implements RemoteInvoke {
             Invocation invocation = new Invocation();
             invocation.setClassName(clazz);
             invocation.setMethodName(method);
-//            invocation.setParamTypes(method.getParameterTypes());
-            invocation.setParamValues(args);
+            Object[] argsConvert = new Object[args.length];
+            for(int i=0;i<args.length;i++){
+                argsConvert[i] =  args[i];
+            }
+            invocation.setParamValues(argsConvert);
             invocation.setPrefix(prefix);
 
             future.channel().writeAndFlush(invocation).sync();

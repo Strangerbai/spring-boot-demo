@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class Invocation implements Serializable {
+public class InvocationReq implements Serializable {
 
     /**
      * 接口名
@@ -22,7 +22,7 @@ public class Invocation implements Serializable {
     /**
      * 方法参数值
      */
-    private Object[] paramValues;
+    private String paramValues;
     /**
      * 要调用的业务接口实现类的功能性前辍
      */
