@@ -7,6 +7,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.http.HttpServerCodec;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.net.URL;
@@ -14,17 +15,23 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Service
 public class TomcatServer {
 
     private Map<String, Servnet> name2ServnetMap = new ConcurrentHashMap<>();
 
     private Map<String, String> name2ClassNameMap = new HashMap<>();
 
-    private String basePackage;
+    public String getBasePackage() {
+        return basePackage;
+    }
 
-    public TomcatServer(String basePackage) {
+    public void setBasePackage(String basePackage) {
         this.basePackage = basePackage;
     }
+
+    private String basePackage;
+
 
     public void start() throws Exception {
         cacheClassName(basePackage);
@@ -80,16 +87,5 @@ public class TomcatServer {
         }
     }
 
-    public static void main(String[] args) {
-        try{
-            TomcatServer tomcatServer = new TomcatServer("com.example.test.demo.tomcat.webapp");
-            tomcatServer.start();
-            System.out.println(tomcatServer.name2ClassNameMap);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-
-
-    }
 
 }
